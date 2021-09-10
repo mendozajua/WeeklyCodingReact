@@ -40,7 +40,6 @@ export const MasterComponent = () => {
             {toggleDetail &&
                 <Card>
                     <Button onClick={(e)=>listManga(e)}>Back to List of Manga</Button>
-                    <Card.Header>{selected.name}</Card.Header>
                     <Card.Body>
                         <ListGroup>
                             {Object.entries(selected).map(([key,val],i)=>{
